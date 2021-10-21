@@ -1,3 +1,7 @@
+The seoul256 theme for vim by [junegunn](https://github.com/junegunn), modified for more muted and cooler colours a darker background.
+
+---
+
 ```
 "  _____             _ ___ ___ ___      "
 " |   __|___ ___ _ _| |_  |  _|  _|     "

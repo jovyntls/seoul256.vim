@@ -213,7 +213,7 @@ call s:hi('Comment', [65, 65], ['', ''])
 call s:hi('Number', [222, 95], ['', ''])
 call s:hi('Float', [222, 95], ['', ''])
 call s:hi('Boolean', [103, 168], ['', ''])
-call s:hi('String', [109, 30], ['', ''])
+call s:hi('String', [137, 30], ['', ''])
 call s:hi('Constant', [73, 23], ['', ''])
 call s:hi('Character', [174, 168], ['', ''])
 call s:hi('Delimiter', [137, 94], ['', ''])
@@ -223,12 +223,12 @@ call s:hi('Statement', [108, 66], ['', ''])
 " hi Label ctermfg=
 
 " if else end
-call s:hi('Conditional', [110, 31], ['', ''])
+call s:hi('Conditional', [146, 31], ['', ''])
 
 " while end
 call s:hi('Repeat', [68, 67], ['', ''])
 call s:hi('Todo', [161, 125], [s:dark_bg_2, s:light_bg_2])
-call s:hi('Function', [187, 58], ['', ''])
+call s:hi('Function', [109, 58], ['', ''])
 
 " Macros
 call s:hi('Define', [173, 131], ['', ''])
@@ -253,7 +253,7 @@ call s:hi('Operator', [186, 131], ['', ''])
 call s:hi('Keyword', [168, 168], ['', ''])
 
 " raise
-call s:hi('Exception', [161, 161], ['', ''])
+call s:hi('Exception', [168, 161], ['', ''])
 "
 " hi StorageClass ctermfg=
 call s:hi('Structure', [116, 23], ['', ''])
