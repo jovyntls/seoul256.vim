@@ -206,7 +206,7 @@ endif
 call s:hi('Normal', [s:dark_fg, s:light_fg], [s:dark_bg, s:light_bg])
 
 call s:hi('LineNr', [101, 101], [s:dark_bg + 1, s:light_bg - 2])
-call s:hi('Visual', ['', ''], [23, 152])
+call s:hi('Visual', ['', ''], [239, 152])
 call s:hi('VisualNOS', ['', ''], [23, 152])
 
 call s:hi('Comment', [65, 65], ['', ''])
@@ -290,7 +290,7 @@ call s:hi('Folded', [101, 101], [s:dark_bg + 1, s:light_bg - 2])
 " set foldcolumn=1
 call s:hi('FoldColumn', [144, 94], [s:dark_bg + 1, s:light_bg - 2])
 
-call s:hi('MatchParen', ['', ''], [s:dark_bg + 3, s:light_bg - 3])
+call s:hi('MatchParen', [s:dark_fg, ''], [24, s:light_bg - 3])
 
 " -- INSERT --
 call s:hi('ModeMsg', [173, 173], ['', ''])
@@ -301,8 +301,8 @@ call s:hi('NonText', [59, 145], ['', ''])
 call s:hi('MoreMsg', [173, 173], ['', ''])
 
 " Popup menu
-call s:hi('Pmenu', [s:dark_bg + 1, 238], [224, 224])
-call s:hi('PmenuSel', [s:dark_fg, s:dark_fg], [89, 89])
+call s:hi('Pmenu', [s:dark_fg + 1, 238], [239, 224])
+call s:hi('PmenuSel', [s:light_fg, s:dark_fg], [146, 89])
 call s:hi('PmenuSbar', ['', ''], [65, 65])
 call s:hi('PmenuThumb', ['', ''], [23, 23])
 
