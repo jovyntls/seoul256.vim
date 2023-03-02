@@ -205,7 +205,7 @@ endif
 
 call s:hi('Normal', [s:dark_fg, s:light_fg], [s:dark_bg, s:light_bg])
 
-call s:hi('LineNr', [101, 101], [s:dark_bg + 1, s:light_bg - 2])
+call s:hi('LineNr', [59, 101], [s:dark_bg + 0, s:light_bg - 2])
 call s:hi('Visual', ['', ''], [239, 152])
 call s:hi('VisualNOS', ['', ''], [23, 152])
 
