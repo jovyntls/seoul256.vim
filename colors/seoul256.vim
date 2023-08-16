@@ -408,7 +408,16 @@ call s:hi('SignifySignDelete', [161, 161], [s:dark_bg + 1, s:light_bg - 2])
 
 " coc.nvim
 " --------
-call s:hi('CocFloating', [s:dark_fg, s:light_fg], [s:dark_bg_2, s:light_bg - 2])
+call s:hi('CocFloating', [s:dark_fg, s:light_fg], [s:dark_bg + 1, s:light_bg - 2])
+call s:hi('CocSemProperty', [s:dark_fg, s:light_fg], ['', ''])
+call s:hi('CocSemParameter', [s:dark_fg, s:light_fg], ['', ''])
+call s:hi('CocSemVariable', [s:dark_fg, s:light_fg], ['', ''])
+call s:hi('CocSemClass', [181, ''], ['', ''])
+call s:hi('CocSemInterface', [181, ''], ['', ''])
+call s:hi('CocSemNamespace', [s:dark_fg, s:light_fg], ['', ''])
+hi CocSemClass cterm=bold, gui=bold
+hi CocSemInterface cterm=bold, gui=bold
+hi CocSemNamespace cterm=bold, gui=bold
 
 " http://vim.wikia.com/wiki/Highlight_unwanted_spaces     
 " ---------------------------------------------------^^^^^
