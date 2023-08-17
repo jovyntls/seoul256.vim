@@ -409,6 +409,8 @@ call s:hi('SignifySignDelete', [161, 161], [s:dark_bg + 1, s:light_bg - 2])
 " coc.nvim
 " --------
 call s:hi('CocFloating', [s:dark_fg, s:light_fg], [s:dark_bg + 1, s:light_bg - 2])
+call s:hi('CocMenuSel', ['', ''], [s:dark_bg - 2, s:light_bg + 2])
+call s:hi('CocListLine', ['', ''], [s:dark_bg + 3, s:light_bg - 3])
 call s:hi('CocSemProperty', [s:dark_fg, s:light_fg], ['', ''])
 call s:hi('CocSemParameter', [s:dark_fg, s:light_fg], ['', ''])
 call s:hi('CocSemVariable', [s:dark_fg, s:light_fg], ['', ''])
