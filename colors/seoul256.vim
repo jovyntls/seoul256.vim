@@ -409,6 +409,7 @@ call s:hi('SignifySignDelete', [161, 161], [s:dark_bg + 1, s:light_bg - 2])
 " coc.nvim
 " --------
 call s:hi('CocFloating', [s:dark_fg, s:light_fg], [s:dark_bg + 1, s:light_bg - 2])
+call s:hi('CocErrorFloat', [203, ''], ['', ''])
 call s:hi('CocMenuSel', ['', ''], [s:dark_bg - 2, s:light_bg + 2])
 call s:hi('CocListLine', ['', ''], [s:dark_bg + 3, s:light_bg - 3])
 call s:hi('CocSemProperty', [s:dark_fg, s:light_fg], ['', ''])
@@ -420,6 +421,11 @@ call s:hi('CocSemNamespace', [s:dark_fg, s:light_fg], ['', ''])
 hi CocSemClass cterm=bold, gui=bold
 hi CocSemInterface cterm=bold, gui=bold
 hi CocSemNamespace cterm=bold, gui=bold
+
+" leap.nvim
+" ---------
+call s:hi('LeapLabelPrimary', [s:dark_fg, s:light_fg], [160, 160])
+hi LeapLabelPrimary cterm=bold, gui=bold
 
 " http://vim.wikia.com/wiki/Highlight_unwanted_spaces     
 " ---------------------------------------------------^^^^^
