@@ -323,31 +323,17 @@ call s:hi('Special', [216, 173], ['', ''])
 " :map, listchars
 call s:hi('SpecialKey', [59, 145], ['', ''])
 
-if !s:gui
-  " Red / Blue / Cyan / Magenta
-  if s:style_idx == 0
-    hi SpellBad   ctermbg=NONE cterm=underline ctermfg=168
-    hi SpellCap   ctermbg=NONE cterm=underline ctermfg=110
-    hi SpellLocal ctermbg=NONE cterm=underline ctermfg=153
-    hi SpellRare  ctermbg=NONE cterm=underline ctermfg=218
-  else
-    hi SpellBad   ctermbg=NONE cterm=underline ctermfg=125
-    hi SpellCap   ctermbg=NONE cterm=underline ctermfg=25
-    hi SpellLocal ctermbg=NONE cterm=underline ctermfg=31
-    hi SpellRare  ctermbg=NONE cterm=underline ctermfg=96
-  endif
+" Red / Blue / Cyan / Magenta
+if s:style_idx == 0
+  execute 'hi SpellBad   ctermbg=NONE cterm=underline ctermfg=168 gui=undercurl guisp=' . s:rgb_map[168]
+  execute 'hi SpellCap   ctermbg=NONE cterm=underline ctermfg=110 gui=undercurl guisp=' . s:rgb_map[110]
+  execute 'hi SpellLocal ctermbg=NONE cterm=underline ctermfg=153 gui=undercurl guisp=' . s:rgb_map[153]
+  execute 'hi SpellRare  ctermbg=NONE cterm=underline ctermfg=218 gui=undercurl guisp=' . s:rgb_map[218]
 else
-  if s:style_idx == 0
-    execute 'hi SpellBad   gui=undercurl guisp=' . s:rgb_map[168]
-    execute 'hi SpellCap   gui=undercurl guisp=' . s:rgb_map[110]
-    execute 'hi SpellLocal gui=undercurl guisp=' . s:rgb_map[153]
-    execute 'hi SpellRare  gui=undercurl guisp=' . s:rgb_map[218]
-  else
-    execute 'hi SpellBad   gui=undercurl guisp=' . s:rgb_map[125]
-    execute 'hi SpellCap   gui=undercurl guisp=' . s:rgb_map[25]
-    execute 'hi SpellLocal gui=undercurl guisp=' . s:rgb_map[31]
-    execute 'hi SpellRare  gui=undercurl guisp=' . s:rgb_map[96]
-  endif
+  execute 'hi SpellBad   ctermbg=NONE cterm=underline ctermfg=125 gui=undercurl guisp=' . s:rgb_map[125]
+  execute 'hi spellcap   ctermbg=NONE cterm=underline ctermfg=25  gui=undercurl guisp=' . s:rgb_map[25]
+  execute 'hi spelllocal ctermbg=NONE cterm=underline ctermfg=31  gui=undercurl guisp=' . s:rgb_map[31]
+  execute 'hi spellrare  ctermbg=NONE cterm=underline ctermfg=96  gui=undercurl guisp=' . s:rgb_map[96]
 endif
 
 "
